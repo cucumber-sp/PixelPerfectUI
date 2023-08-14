@@ -1,0 +1,10 @@
+{
+    "name": "com.cucumberspace.pixelperfectui",
+    "version": "1.0.0",
+    "description": "Provides set of UI graphic components drawn wtih GPU",
+    "displayName": "Pixel Perfect UI",
+    "author": {
+        "name": "Cucumber Space",
+        "email": "loraner123@gmail.com"
+    }
+}

@@ -1,0 +1,14 @@
+
+.idea/
+
+Library/
+
+Logs/
+
+obj/
+
+UserSettings/
+
+*.csproj
+
+PixelPerfectUI.sln
