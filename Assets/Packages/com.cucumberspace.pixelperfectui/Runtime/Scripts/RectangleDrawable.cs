@@ -60,10 +60,10 @@ namespace PixelPerfectUI
             
             vh.Clear();
             
-            AddVertex(width * (pivot.x - 1), height * (pivot.y - 1), -1, -1); // 0
-            AddVertex(width * (pivot.x - 1), height * (1 - pivot.y), -1, 1); // 1
+            AddVertex(width * (-pivot.x), height * (-pivot.y), -1, -1); // 0
+            AddVertex(width * (-pivot.x), height * (1 - pivot.y), -1, 1); // 1
             AddVertex(width * (1 - pivot.x), height * (1 - pivot.y), 1, 1); // 2
-            AddVertex(width * (1 - pivot.x), height * (pivot.y - 1), 1, -1); // 3
+            AddVertex(width * (1 - pivot.x), height * (-pivot.y), 1, -1); // 3
             vh.AddTriangle(0, 1, 2);
             vh.AddTriangle(0, 2, 3);
             

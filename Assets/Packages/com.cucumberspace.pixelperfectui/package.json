@@ -1,6 +1,6 @@
 {
     "name": "com.cucumberspace.pixelperfectui",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Provides set of UI graphic components drawn wtih GPU",
     "displayName": "Pixel Perfect UI",
     "author": {
