@@ -56,13 +56,14 @@ namespace PixelPerfectUI
             float height = rect.height;
             float minSize = Mathf.Min(width, height);
             float cornerRadiusClamped = Mathf.Clamp(cornerRadius, 0, minSize / 2);
+            Vector2 pivot = rectTransform.pivot;
             
             vh.Clear();
             
-            AddVertex(-width / 2, -height / 2, -1, -1); // 0
-            AddVertex(-width / 2, height / 2, -1, 1); // 1
-            AddVertex(width / 2, height / 2, 1, 1); // 2
-            AddVertex(width / 2, -height / 2, 1, -1); // 3
+            AddVertex(width * (pivot.x - 1), height * (pivot.y - 1), -1, -1); // 0
+            AddVertex(width * (pivot.x - 1), height * (1 - pivot.y), -1, 1); // 1
+            AddVertex(width * (1 - pivot.x), height * (1 - pivot.y), 1, 1); // 2
+            AddVertex(width * (1 - pivot.x), height * (pivot.y - 1), 1, -1); // 3
             vh.AddTriangle(0, 1, 2);
             vh.AddTriangle(0, 2, 3);
             
